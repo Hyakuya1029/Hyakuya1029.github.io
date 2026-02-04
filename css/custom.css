@@ -1,0 +1,14 @@
+/*
+组件透明化
+.recent-post-item 主页最新文章的组件 
+#page 网页主要内容的组件
+#post 博客文章内容的组件
+.card-widget 侧边栏相关的组件
+*/
+
+.recent-post-item, #page, #post, .card-widget {
+  background: rgba(255, 255, 255, 0.7) !important; 
+  -webkit-backdrop-filter: blur(8px) !important; /* 兼容Chrome/Edge/Safari */
+  backdrop-filter: blur(8px) !important; /* 核心毛玻璃模糊，8px是适中值 */
+  backdrop-filter: blur(8px) saturate(100%) !important; /* 增加饱和度，毛玻璃更自然 */
+}
